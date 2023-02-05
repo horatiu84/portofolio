@@ -4,6 +4,7 @@ import Logo from '../../assets/images/logo-s.svg'
 import LogoSubtitle from '../../assets/images/logo_sub.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => {
     return (
@@ -23,6 +24,19 @@ const Sidebar = () => {
                     < FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
                 </NavLink>
             </nav>
+            <ul>
+                <li>
+                    <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/horatiu-evu-620b0556/'>
+                        <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
+                    </a>
+                </li>
+                <li>
+                    <a target='_blank' rel='noreferrer' href='https://github.com/horatiu84'>
+                        <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
+                    </a>
+                </li>
+                
+            </ul>
         </div>
     )
 }
